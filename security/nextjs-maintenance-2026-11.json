@@ -1,0 +1,268 @@
+{
+  "date": "2026-11-02",
+  "scope": "Next.js 15 and 16 manifests only; not a complete repository remediation",
+  "manifest_changes": [
+    {
+      "path": "packages/data/crypto-data-aggregator/package.json",
+      "section": "dependencies",
+      "before": "^16.1.1",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "packages/data/free-crypto-news/package.json",
+      "section": "dependencies",
+      "before": "^16.1.1",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "packages/generators/github-to-mcp/apps/web/package.json",
+      "section": "dependencies",
+      "before": "16.1.5",
+      "after": "16.4.4"
+    },
+    {
+      "path": "packages/generators/ucai/ucai/package.json",
+      "section": "dependencies",
+      "before": "16.1.1",
+      "after": "16.4.4"
+    },
+    {
+      "path": "packages/generators/ucai/web-v2/package.json",
+      "section": "dependencies",
+      "before": "16.1.1",
+      "after": "16.4.4"
+    },
+    {
+      "path": "packages/generators/ucai/web/package.json",
+      "section": "dependencies",
+      "before": "16.1.1",
+      "after": "16.4.4"
+    },
+    {
+      "path": "packages/protocols/sperax-crypto-mcp/web/package.json",
+      "section": "dependencies",
+      "before": "16.1.1",
+      "after": "16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-aptos/examples/nextjs-app-router/package.json",
+      "section": "dependencies",
+      "before": "^16.0.3",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/e2e/legacy/servers/next/package.json",
+      "section": "dependencies",
+      "before": "^15.5.9",
+      "after": "^15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/e2e/servers/next/package.json",
+      "section": "dependencies",
+      "before": "^16.0.10",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/fullstack/miniapp/package.json",
+      "section": "dependencies",
+      "before": "^16.0.10",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/fullstack/next/package.json",
+      "section": "dependencies",
+      "before": "^16.0.10",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/legacy/fullstack/farcaster-miniapp/package.json",
+      "section": "dependencies",
+      "before": "15.5.9",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/legacy/fullstack/next-advanced/package.json",
+      "section": "dependencies",
+      "before": "15.5.9",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/legacy/fullstack/next/package.json",
+      "section": "dependencies",
+      "before": "16.0.10",
+      "after": "16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/typescript/packages/http/next/package.json",
+      "section": "peerDependencies",
+      "before": "^16.0.10",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/typescript/packages/legacy/x402-next/package.json",
+      "section": "peerDependencies",
+      "before": ">=15.5.9 || >=16.0.10",
+      "after": "^15.5.28 || ^16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/typescript/site/package.json",
+      "section": "dependencies",
+      "before": "^16.0.10",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-crossmint/hello-crossmint-wallets-a2a/package.json",
+      "section": "dependencies",
+      "before": "15.5.9",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-crossmint/send-tweet/client/package.json",
+      "section": "dependencies",
+      "before": "15.5.9",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-daydreams/docs/package.json",
+      "section": "dependencies",
+      "before": "15.2.3",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-lucid-agents/packages/cli/adapters/next/package.json",
+      "section": "dependencies",
+      "before": "^16.0.0",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-mcp-ts/apps/example/package.json",
+      "section": "dependencies",
+      "before": "15.5.7",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-mcpay/apps/app/package.json",
+      "section": "dependencies",
+      "before": "15.4.8",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-mcpay/apps/docs/package.json",
+      "section": "dependencies",
+      "before": "15.5.7",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-mcpay/examples/auth-example/package.json",
+      "section": "dependencies",
+      "before": "15.5.4",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-mcpay/examples/chatgpt-apps-sdk-nextjs-starter/package.json",
+      "section": "dependencies",
+      "before": "15.5.4",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-microai-paygate/web/package.json",
+      "section": "dependencies",
+      "before": "16.1.1",
+      "after": "16.4.4"
+    },
+    {
+      "path": "packages/protocols/x402-open-facilitator/apps/dashboard/package.json",
+      "section": "dependencies",
+      "before": "^15.5.9",
+      "after": "^15.5.28"
+    },
+    {
+      "path": "packages/protocols/x402-vercel-starter/package.json",
+      "section": "dependencies",
+      "before": "15.5.8",
+      "after": "15.5.28"
+    },
+    {
+      "path": "packages/tools/lyra-tool-discovery/dashboard/package.json",
+      "section": "dependencies",
+      "before": "^15.1.0",
+      "after": "^15.5.28"
+    },
+    {
+      "path": "packages/wallets/sweep/frontend/package.json",
+      "section": "dependencies",
+      "before": "^16.1.4",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "x402/e2e/legacy/servers/next/package.json",
+      "section": "dependencies",
+      "before": "^15.5.9",
+      "after": "^15.5.28"
+    },
+    {
+      "path": "x402/e2e/servers/next/package.json",
+      "section": "dependencies",
+      "before": "^16.0.10",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "x402/examples/typescript/fullstack/miniapp/package.json",
+      "section": "dependencies",
+      "before": "^16.0.10",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "x402/examples/typescript/fullstack/next/package.json",
+      "section": "dependencies",
+      "before": "^16.0.10",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "x402/examples/typescript/legacy/fullstack/farcaster-miniapp/package.json",
+      "section": "dependencies",
+      "before": "15.5.9",
+      "after": "15.5.28"
+    },
+    {
+      "path": "x402/examples/typescript/legacy/fullstack/next-advanced/package.json",
+      "section": "dependencies",
+      "before": "15.5.9",
+      "after": "15.5.28"
+    },
+    {
+      "path": "x402/examples/typescript/legacy/fullstack/next/package.json",
+      "section": "dependencies",
+      "before": "16.0.10",
+      "after": "16.4.4"
+    },
+    {
+      "path": "x402/typescript/package.json",
+      "section": "devDependencies",
+      "before": "^16.0.0",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "x402/typescript/packages/http/next/package.json",
+      "section": "peerDependencies",
+      "before": "^16.0.10",
+      "after": "^16.4.4"
+    },
+    {
+      "path": "x402/typescript/packages/legacy/x402-next/package.json",
+      "section": "peerDependencies",
+      "before": ">=15.5.9 || >=16.0.10",
+      "after": "^15.5.28 || ^16.4.4"
+    }
+  ],
+  "validation": [
+    "Modified manifests parse as JSON; only Next.js ranges changed",
+    "npm and pnpm lockfile regeneration completed without lifecycle scripts"
+  ],
+  "remaining": [
+    "Full workspace builds/tests are not validated",
+    "Next.js 13/14 projects require migration",
+    "Other vulnerable packages and runtime/deployment versions remain unremediated"
+  ],
+  "lockfile_note": "Removed two obsolete leaf pnpm locks for workspace:* packages. Parent workspace lockfiles are authoritative and include the upgraded package importers."
+}
