@@ -1,0 +1,49 @@
+name: Go facilitator security boundaries
+on:
+  pull_request:
+    paths:
+      - 'packages/protocols/x402-go-facilitator/**'
+      - '.github/workflows/go-facilitator-security.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'packages/protocols/x402-go-facilitator/**'
+      - '.github/workflows/go-facilitator-security.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      GOTOOLCHAIN: local
+      CGO_ENABLED: '0'
+      GOWORK: 'off'
+    defaults:
+      run:
+        working-directory: packages/protocols/x402-go-facilitator
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version: '1.27.3'
+          cache: false
+      - run: go mod download
+      - run: go mod verify
+      - name: Reject formatter drift
+        run: test -z "$(gofmt -l security)"
+      - name: Authorization and configuration privacy regressions
+        run: go test -mod=readonly -count=1 -v ./security
+      - name: Offline SDK contract subset
+        run: go test -mod=readonly -count=1 ./internal/sdk -run 'TestSDK|TestPayloadDetection|TestFacilitatorCreation'
+      - run: go vet -mod=readonly ./...
+      - run: go build -mod=readonly ./...
+      - name: Reachable symbol vulnerability scan
+        run: go run golang.org/x/vuln/cmd/govulncheck@v1.9.0 ./...
+  container-build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Build pinned facilitator image without starting the payment service
+        run: docker build --tag facilitator-security-check packages/protocols/x402-go-facilitator

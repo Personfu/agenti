@@ -3,7 +3,7 @@
 **x402-facilitator** is a Go-based middleware that settles on-chain payments authorized via the [x402 protocol](https://x402.dev).
 
 ## Prerequisites
-- Golang 1.24 or later
+- Go 1.26.10 or later on a supported release line; reproducible builds use Go 1.27.3
 - Docker
 - Docker Compose
 
@@ -71,3 +71,46 @@ Example:
 
 ## Contributing
 We welcome any contributions! Feel free to open issues or submit pull requests at any time.
+
+
+## HTTP and configuration security
+
+The facilitator pins Echo 4.16.3, the current compatible Go cryptography/network
+modules, and updated Ethereum/WebSocket dependencies. The container uses Go
+1.27.3 and an immutable Debian base rather than floating runtime tags.
+
+[Echo GHSA-cxf3-9h37-7rr8](https://github.com/labstack/echo/security/advisories/GHSA-cxf3-9h37-7rr8)
+describes a rejected WebSocket upgrade becoming a raw connection that can bypass
+route authorization. This service currently does not configure Echo's Proxy
+middleware. The dependency is still upgraded, and a loopback-only regression
+verifies that a subsequent private request receives 401 and never reaches the
+upstream handler. Mapstructure errors are also checked with synthetic malformed
+integer and duration inputs so that rejected configuration does not echo values.
+
+Run these checks without wallets, production environment files or RPC credentials:
+
+```sh
+go mod verify
+go test -mod=readonly -count=1 ./security
+go test -mod=readonly -count=1 ./internal/sdk -run 'TestSDK|TestPayloadDetection|TestFacilitatorCreation'
+go vet -mod=readonly ./...
+go build -mod=readonly ./...
+go run golang.org/x/vuln/cmd/govulncheck@v1.9.0 ./...
+```
+
+The SDK subset checks imports, types, constants and payload classification. These
+checks do not settle payments, sign transactions, validate live RPC integrations
+or prove a deployed container has been rebuilt. Production rollout requires
+verification of the actual binary's Go build information and container digest.
+
+The module vulnerability report still includes the unmaintained `x/crypto/openpgp`
+package and an x402 SDK advisory. This service imports the EVM facilitator;
+Solana remains planned. Do not infer a clean module audit from zero reachable
+symbol findings, or dismiss the x402 alert without reviewing its affected paths.
+
+Additional primary references, reviewed November 3, 2026:
+
+- [Mapstructure malformed-data disclosure](https://github.com/go-viper/mapstructure/security/advisories/GHSA-fv92-fjc5-jj9h)
+- [Mapstructure duration disclosure](https://github.com/go-viper/mapstructure/security/advisories/GHSA-2464-8j7c-4cjm)
+- [Go vulnerability database](https://pkg.go.dev/vuln/)
+- [x402 SDK advisory](https://github.com/advisories/GHSA-qr2g-p6q7-w82m)
