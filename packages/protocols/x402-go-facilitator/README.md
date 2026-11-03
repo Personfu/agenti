@@ -103,10 +103,17 @@ checks do not settle payments, sign transactions, validate live RPC integrations
 or prove a deployed container has been rebuilt. Production rollout requires
 verification of the actual binary's Go build information and container digest.
 
-The module vulnerability report still includes the unmaintained `x/crypto/openpgp`
-package and an x402 SDK advisory. This service imports the EVM facilitator;
-Solana remains planned. Do not infer a clean module audit from zero reachable
-symbol findings, or dismiss the x402 alert without reviewing its affected paths.
+The first Linux CI scan flagged the legacy x402 module even though the local
+Windows scan did not report a reachable symbol. The service now migrates to the
+maintained `github.com/x402-foundation/x402/go/v2` module at v2.29.0. Its unused
+internal `GetNetworkConfig` re-export was removed because the supported SDK no
+longer provides that helper; application call sites did not use it. The checked
+SDK contract tests retain payload classification and facilitator construction.
+Solana remains planned and no real payment behavior was tested.
+
+The module report still includes the unmaintained `x/crypto/openpgp` package.
+Do not infer a clean module audit from zero reachable-symbol findings. Linux CI,
+container-build and deployment evidence remain separate requirements.
 
 Additional primary references, reviewed November 3, 2026:
 
