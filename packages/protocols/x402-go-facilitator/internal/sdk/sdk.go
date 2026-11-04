@@ -6,10 +6,10 @@
 package sdk
 
 import (
-	x402 "github.com/coinbase/x402/go"
-	"github.com/coinbase/x402/go/mechanisms/evm"
-	"github.com/coinbase/x402/go/mechanisms/evm/exact/facilitator"
-	"github.com/coinbase/x402/go/types"
+	x402 "github.com/x402-foundation/x402/go/v2"
+	"github.com/x402-foundation/x402/go/v2/mechanisms/evm"
+	"github.com/x402-foundation/x402/go/v2/mechanisms/evm/exact/facilitator"
+	"github.com/x402-foundation/x402/go/v2/types"
 )
 
 // =============================================================================
@@ -153,9 +153,6 @@ var (
 // =============================================================================
 
 var (
-	// GetNetworkConfig returns the network configuration for a given network
-	GetNetworkConfig = evm.GetNetworkConfig
-
 	// GetAssetInfo returns asset information for a given network and asset address
 	GetAssetInfo = evm.GetAssetInfo
 )
