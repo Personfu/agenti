@@ -1,0 +1,599 @@
+{
+  "reviewed_at": "2026-11-04T21:20:00.731150+00:00",
+  "status": "DRAFT; this is not a verified full-repository remediation",
+  "scope": "Existing PR2: nested Next15/16 declarations and exact pnpm owners; generator test/runtime dependency security and actual native validation",
+  "initial_next_review": "nextjs-maintenance-2026-11.json",
+  "next_patch_changes": [
+    {
+      "path": "packages/generators/github-to-mcp/apps/web/package.json",
+      "owner": "packages/generators/github-to-mcp/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "16.4.4",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/e2e/legacy/servers/next/package.json",
+      "owner": "packages/protocols/x402-coinbase/e2e/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^15.5.28",
+          "after": "^15.5.29"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "15.1.9",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/e2e/servers/next/package.json",
+      "owner": "packages/protocols/x402-coinbase/e2e/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "16.0.7",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/fullstack/miniapp/package.json",
+      "owner": "packages/protocols/x402-coinbase/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "16.0.6",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/fullstack/next/package.json",
+      "owner": "packages/protocols/x402-coinbase/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "16.0.6",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/legacy/fullstack/farcaster-miniapp/package.json",
+      "owner": "packages/protocols/x402-coinbase/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "15.5.7",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/legacy/fullstack/next-advanced/package.json",
+      "owner": "packages/protocols/x402-coinbase/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "15.5.7",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/examples/typescript/legacy/fullstack/next/package.json",
+      "owner": "packages/protocols/x402-coinbase/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "16.4.4",
+          "after": "16.4.5"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "16.0.7",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/typescript/packages/http/next/package.json",
+      "owner": "packages/protocols/x402-coinbase/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "peerDependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/typescript/packages/legacy/x402-next/package.json",
+      "owner": "packages/protocols/x402-coinbase/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "peerDependencies",
+          "package": "next",
+          "before": "^15.5.28 || ^16.4.4",
+          "after": "^15.5.29 || ^16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-coinbase/typescript/site/package.json",
+      "owner": "packages/protocols/x402-coinbase/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "16.0.6",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-mcp-ts/apps/example/package.json",
+      "owner": "packages/protocols/x402-mcp-ts/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-mcpay/apps/app/package.json",
+      "owner": "packages/protocols/x402-mcpay/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "15.4.1",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-mcpay/apps/docs/package.json",
+      "owner": "packages/protocols/x402-mcpay/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-mcpay/examples/auth-example/package.json",
+      "owner": "packages/protocols/x402-mcpay/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "15.5.4",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-mcpay/examples/chatgpt-apps-sdk-nextjs-starter/package.json",
+      "owner": "packages/protocols/x402-mcpay/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-open-facilitator/apps/dashboard/package.json",
+      "owner": "packages/protocols/x402-open-facilitator/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^15.5.28",
+          "after": "^15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/protocols/x402-vercel-starter/package.json",
+      "owner": "packages/protocols/x402-vercel-starter/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "packages/tools/lyra-tool-discovery/dashboard/package.json",
+      "owner": "packages/tools/lyra-tool-discovery/dashboard/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^15.5.28",
+          "after": "^15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "x402/e2e/legacy/servers/next/package.json",
+      "owner": "x402/e2e/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^15.5.28",
+          "after": "^15.5.29"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "15.1.9",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "x402/e2e/servers/next/package.json",
+      "owner": "x402/e2e/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "16.0.7",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "x402/examples/typescript/fullstack/miniapp/package.json",
+      "owner": "x402/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "16.0.6",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "x402/examples/typescript/fullstack/next/package.json",
+      "owner": "x402/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "16.0.6",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "x402/examples/typescript/legacy/fullstack/farcaster-miniapp/package.json",
+      "owner": "x402/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "15.5.7",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "x402/examples/typescript/legacy/fullstack/next-advanced/package.json",
+      "owner": "x402/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "15.5.28",
+          "after": "15.5.29"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "15.5.7",
+          "after": "15.5.29"
+        }
+      ]
+    },
+    {
+      "path": "x402/examples/typescript/legacy/fullstack/next/package.json",
+      "owner": "x402/examples/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "dependencies",
+          "package": "next",
+          "before": "16.4.4",
+          "after": "16.4.5"
+        },
+        {
+          "section": "devDependencies",
+          "package": "eslint-config-next",
+          "before": "16.0.7",
+          "after": "16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "x402/typescript/package.json",
+      "owner": "x402/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "devDependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "x402/typescript/packages/http/next/package.json",
+      "owner": "x402/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "peerDependencies",
+          "package": "next",
+          "before": "^16.4.4",
+          "after": "^16.4.5"
+        }
+      ]
+    },
+    {
+      "path": "x402/typescript/packages/legacy/x402-next/package.json",
+      "owner": "x402/typescript/pnpm-lock.yaml",
+      "changes": [
+        {
+          "section": "peerDependencies",
+          "package": "next",
+          "before": "^15.5.28 || ^16.4.4",
+          "after": "^15.5.29 || ^16.4.5"
+        }
+      ]
+    }
+  ],
+  "authoritative_locks": [
+    "packages/generators/github-to-mcp/pnpm-lock.yaml",
+    "packages/protocols/x402-coinbase/e2e/pnpm-lock.yaml",
+    "packages/protocols/x402-coinbase/examples/typescript/pnpm-lock.yaml",
+    "packages/protocols/x402-coinbase/typescript/pnpm-lock.yaml",
+    "packages/protocols/x402-mcp-ts/pnpm-lock.yaml",
+    "packages/protocols/x402-mcpay/pnpm-lock.yaml",
+    "packages/protocols/x402-open-facilitator/pnpm-lock.yaml",
+    "packages/protocols/x402-vercel-starter/pnpm-lock.yaml",
+    "packages/tools/lyra-tool-discovery/dashboard/pnpm-lock.yaml",
+    "x402/e2e/pnpm-lock.yaml",
+    "x402/examples/typescript/pnpm-lock.yaml",
+    "x402/typescript/pnpm-lock.yaml"
+  ],
+  "unresolved_lock_ownership": [
+    "packages/data/crypto-data-aggregator/package.json",
+    "packages/data/free-crypto-news/package.json",
+    "packages/generators/ucai/ucai/package.json",
+    "packages/generators/ucai/web-v2/package.json",
+    "packages/generators/ucai/web/package.json",
+    "packages/protocols/sperax-crypto-mcp/web/package.json",
+    "packages/protocols/x402-aptos/examples/nextjs-app-router/package.json",
+    "packages/protocols/x402-crossmint/hello-crossmint-wallets-a2a/package.json",
+    "packages/protocols/x402-crossmint/send-tweet/client/package.json",
+    "packages/protocols/x402-daydreams/docs/package.json",
+    "packages/protocols/x402-lucid-agents/packages/cli/adapters/next/package.json",
+    "packages/protocols/x402-microai-paygate/web/package.json",
+    "packages/wallets/sweep/frontend/package.json"
+  ],
+  "lock_results": {
+    "initial_passed": 1,
+    "initial_failed": 11,
+    "generator_after_repair": "Strict lock regeneration and actual frozen clean install pass; all12owners are independently validated in native CI",
+    "other_known_peer_conflicts": "Remain blockers; no legacy-peer switch, unsafe override or package-manager replacement"
+  },
+  "generator": {
+    "next": "16.4.5",
+    "vitest": "4.1.12",
+    "coverage": "4.1.12",
+    "vite": "6.4.5",
+    "handlebars": "4.7.10",
+    "proxy_addr": "2.0.8",
+    "proxy_resolution": "Exact express5.2.1 parent; its published^2.0.7 range admits2.0.8. No incompatible override.",
+    "full_audit": {
+      "info": 0,
+      "low": 8,
+      "moderate": 66,
+      "high": 69,
+      "critical": 0
+    },
+    "latest_local_tests": {
+      "success": false,
+      "numTotalTestSuites": 163,
+      "numPassedTestSuites": 156,
+      "numFailedTestSuites": 7,
+      "numTotalTests": 341,
+      "numPassedTests": 330,
+      "numFailedTests": 11,
+      "numPendingTests": 0,
+      "numTodoTests": 0
+    },
+    "latest_typecheck": {
+      "exit_code": 1,
+      "diagnostic_count": 42
+    },
+    "windows_node22_startup": "ERR_PACKAGE_IMPORT_NOT_DEFINED before tests; not a pass. Node24 actually runs the configured suite. Native Linux22/24 remains separate proof.",
+    "declaration_artifacts": "Three pre-existing tsup declaration builds are disabled; registry publishes a missing type filename. Build command success is not usable-type or published-artifact proof."
+  },
+  "validation_boundaries": [
+    "Native CI never treats configured scanners or root soft-gated jobs as successful scoped validation.",
+    "No test assertion, existing timeout, retry or skip is relaxed. Constructor doubles are constructable under patched Vitest; two negative fixtures no longer contain the literal they claim to omit.",
+    "Actual runtime network guard permits only ephemeral owned loopback fixtures; five Node22/24 boundary contracts pass. No raw errors, credentials or customer records are emitted.",
+    "No live model, signing/payment, production database operation or deployment is used as a dependency test.",
+    "No deployment/binary rollout attested. Older13/14 applications, templates and unlocked/Bun projects remain separate unfinished work."
+  ],
+  "primary_sources": [
+    "https://github.com/vercel/next.js/releases/tag/v16.4.5",
+    "https://github.com/vercel/next.js/releases/tag/v15.5.29",
+    "https://github.com/advisories/GHSA-5xrq-8626-4rwp",
+    "https://github.com/advisories/GHSA-2w6w-674q-4c4q",
+    "https://github.com/advisories/GHSA-8r5x-fm3f-whwj",
+    "https://github.com/advisories/GHSA-p8wg-vrv2-v86f",
+    "https://github.com/advisories/GHSA-jqcg-44mw-7w3h"
+  ],
+  "native_initial_head": "6bee97c197af110872383fc6eb04eb42525e35b3",
+  "native_initial_results": [
+    {
+      "job": 126875871568,
+      "node": "v22.23.4",
+      "audit": {
+        "info": 0,
+        "low": 8,
+        "moderate": 66,
+        "high": 69,
+        "critical": 0
+      },
+      "tests": {
+        "success": false,
+        "numTotalTestSuites": 163,
+        "numPassedTestSuites": 153,
+        "numFailedTestSuites": 10,
+        "numTotalTests": 341,
+        "numPassedTests": 329,
+        "numFailedTests": 12,
+        "numPendingTests": 0,
+        "numTodoTests": 0
+      },
+      "security_regressions_passed": 8
+    },
+    {
+      "job": 126875871639,
+      "node": "v24.22.1",
+      "audit": {
+        "info": 0,
+        "low": 8,
+        "moderate": 66,
+        "high": 69,
+        "critical": 0
+      },
+      "tests": {
+        "success": false,
+        "numTotalTestSuites": 163,
+        "numPassedTestSuites": 153,
+        "numFailedTestSuites": 10,
+        "numTotalTests": 341,
+        "numPassedTests": 329,
+        "numFailedTests": 12,
+        "numPendingTests": 0,
+        "numTodoTests": 0
+      },
+      "security_regressions_passed": 8
+    }
+  ],
+  "fresh_peer_validation_control": {
+    "pnpm": "10.7.0",
+    "frozen_exit": 0,
+    "fresh_peer_exit": 1,
+    "unmet_peer_lines": 52,
+    "improvement_verified": true,
+    "requirement": "Both frozen install and explicit resolution-only strict peer check, followed by unchanged authoritative lock/declarations. Frozen success alone is insufficient."
+  }
+}

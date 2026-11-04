@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "next": "^15.5.9",
+    "next": "^15.5.29",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "viem": "^2.21.26",
@@ -31,7 +31,7 @@
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.1",
     "eslint": "^9.24.0",
-    "eslint-config-next": "15.1.9",
+    "eslint-config-next": "15.5.29",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsdoc": "^50.6.9",
     "eslint-plugin-prettier": "^5.2.6",

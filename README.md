@@ -494,3 +494,29 @@ how to register AI agent on blockchain, how to create ERC-8004 agent, how to bui
 10000+ agents, 10300+ agents, 10000+ testnet registrations, 20000+ feedback, 5 months development, 80+ teams, 100+ partners, January 28 2026, January 29 2026, mainnet live, production ready, audited contracts, singleton deployment, per-chain singleton, ERC-721 token, NFT minting, gas fees, $5-20 mainnet gas
 
 </details>
+
+## November 2026 framework maintenance
+
+The open maintenance draft now distinguishes each nested application's actual
+lockfile owner from unrelated ancestor locks. The November follow-up raises
+29 declarations across 12 confirmed pnpm owners to the reviewed Next.js
+15.5.29 or 16.4.5 security releases. Thirteen other leaf, template or Bun
+ownership cases and the older Next.js 13/14 migrations remain unfinished.
+The root npm lock does not cover these nested applications.
+
+Read [`security/nextjs-november-2026.json`](security/nextjs-november-2026.json)
+for the exact changes and validation limits. The earlier
+[`November 2 record`](security/nextjs-maintenance-2026-11.json) remains
+historical evidence, rather than current clearance.
+
+The generator workspace also updates its vulnerable Vitest and Handlebars
+dependencies and the proxy-addr instance actually consumed by Express. Its
+candidate audit has zero critical findings but still has high, moderate and
+low findings. Tests, typechecks, lint, builds, emitted declaration files and
+actual runtime behavior remain separate merge requirements. The draft must
+not be merged on the strength of a package audit or existing soft-gated CI.
+
+See the generator's
+[security maintenance guide](packages/generators/github-to-mcp/SECURITY-MAINTENANCE.md)
+for safe validation and release boundaries. No production migration, signing,
+payment or paid-model operation is part of dependency validation.

@@ -20,7 +20,7 @@
     "@x402/next": "workspace:*",
     "@x402/paywall": "workspace:*",
     "@x402/extensions": "workspace:*",
-    "next": "^16.0.10",
+    "next": "^16.4.5",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
@@ -33,7 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "eslint": "^9.24.0",
-    "eslint-config-next": "16.0.6",
+    "eslint-config-next": "16.4.5",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsdoc": "^50.6.9",
     "eslint-plugin-prettier": "^5.2.6",
