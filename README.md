@@ -497,21 +497,26 @@ how to register AI agent on blockchain, how to create ERC-8004 agent, how to bui
 
 ## November 2026 framework maintenance
 
-The security maintenance branch updates existing Next.js 15 projects to 15.5.28
-and Next.js 16 projects to 16.4.4. See
-[`security/nextjs-maintenance-2026-11.json`](security/nextjs-maintenance-2026-11.json)
-for the exact manifest changes and outstanding validation. Lockfiles were
-regenerated without running dependency lifecycle scripts. This batch remains
-under review until the affected applications and workspaces pass their own
-build and behavior checks; it does not establish that the entire repository is
-free of vulnerabilities.
+The open maintenance draft now distinguishes each nested application's actual
+lockfile owner from unrelated ancestor locks. The November follow-up raises
+29 declarations across 12 confirmed pnpm owners to the reviewed Next.js
+15.5.29 or 16.4.5 security releases. Thirteen other leaf, template or Bun
+ownership cases and the older Next.js 13/14 migrations remain unfinished.
+The root npm lock does not cover these nested applications.
 
-Older Next.js 13/14 projects still need an explicit migration. Templates and
-examples can create vulnerable downstream projects even if they are not
-deployed here, so include them in the remaining work. Follow each subproject's
-package manager and environment instructions. Do not run production migrations,
-payment flows or signing operations as dependency validation. Rebuild and
-verify deployed runtimes after a patch rather than closing an alert based only
-on a manifest edit.
+Read [`security/nextjs-november-2026.json`](security/nextjs-november-2026.json)
+for the exact changes and validation limits. The earlier
+[`November 2 record`](security/nextjs-maintenance-2026-11.json) remains
+historical evidence, rather than current clearance.
 
-Source: [Next.js October 2026 security update](https://nextjs.org/blog/nextjs-security-update-october-14-2026).
+The generator workspace also updates its vulnerable Vitest and Handlebars
+dependencies and the proxy-addr instance actually consumed by Express. Its
+candidate audit has zero critical findings but still has high, moderate and
+low findings. Tests, typechecks, lint, builds, emitted declaration files and
+actual runtime behavior remain separate merge requirements. The draft must
+not be merged on the strength of a package audit or existing soft-gated CI.
+
+See the generator's
+[security maintenance guide](packages/generators/github-to-mcp/SECURITY-MAINTENANCE.md)
+for safe validation and release boundaries. No production migration, signing,
+payment or paid-model operation is part of dependency validation.
