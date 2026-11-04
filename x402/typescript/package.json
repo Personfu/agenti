@@ -30,7 +30,7 @@
   "author": "nichxbt",
   "license": "ISC",
   "devDependencies": {
-    "next": "^16.4.4",
+    "next": "^16.4.5",
     "tsup": "^8.4.0",
     "turbo": "^2.5.0",
     "typescript": "^5.8.3"
