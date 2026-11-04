@@ -34,6 +34,8 @@ actual results remain merge requirements. Start with:
 
 ```sh
 pnpm install --frozen-lockfile --ignore-scripts --strict-peer-dependencies
+pnpm install --resolution-only --lockfile-only --ignore-scripts --no-frozen-lockfile --strict-peer-dependencies
+git diff --quiet -- pnpm-lock.yaml package.json
 pnpm --recursive --filter './packages/*' --fail-if-no-match build
 pnpm exec vitest run
 pnpm --recursive --no-bail --fail-if-no-match typecheck
@@ -68,3 +70,9 @@ blockers and are tested independently; do not bypass them with legacy peer
 mode or incompatible overrides. Keep old framework migrations, unlocked/Bun
 projects, generated templates, browser/Electron rollout and production
 deployments on their own evidence-backed backlog.
+
+A paired pnpm10.7.0 control accepted frozen metadata but rejected the freshly
+resolved peer graph. Both modes are mandatory in CI, and changed authoritative
+files require review. The first native Linux22/24 runs passed all eight new
+security contracts but failed the complete suite at329passed/12failed/0skips.
+Those failures remain blockers; they are not replaced by the audit result.
