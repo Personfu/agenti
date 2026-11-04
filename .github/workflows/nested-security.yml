@@ -61,6 +61,12 @@ jobs:
       - name: Actual strict frozen install; errors remain blockers
         working-directory: ${{ matrix.directory }}
         run: node "$GITHUB_WORKSPACE/security/maintenance/run-check.cjs" strict-install
+      - name: Re-resolve the actual peer graph without running lifecycle scripts
+        working-directory: ${{ matrix.directory }}
+        run: node "$GITHUB_WORKSPACE/security/maintenance/run-check.cjs" peer-graph
+      - name: Authoritative lock and declarations must remain reproducible
+        working-directory: ${{ matrix.directory }}
+        run: node "$GITHUB_WORKSPACE/security/maintenance/run-check.cjs" lock-unchanged
   generator:
     name: Generator security (${{ matrix.node }})
     runs-on: ubuntu-latest
@@ -84,6 +90,10 @@ jobs:
         run: node --test "$GITHUB_WORKSPACE/security/maintenance/disposable-network.test.cjs"
       - name: Strict frozen clean install
         run: node "$GITHUB_WORKSPACE/security/maintenance/run-check.cjs" strict-install
+      - name: Fresh strict peer graph
+        run: node "$GITHUB_WORKSPACE/security/maintenance/run-check.cjs" peer-graph
+      - name: Authoritative lock and declarations remain unchanged
+        run: node "$GITHUB_WORKSPACE/security/maintenance/run-check.cjs" lock-unchanged
       - name: Full audit; critical findings block, other severities remain visible
         run: node "$GITHUB_WORKSPACE/security/maintenance/run-check.cjs" audit
       - name: Build all generator libraries without external services

@@ -538,5 +538,62 @@
     "https://github.com/advisories/GHSA-8r5x-fm3f-whwj",
     "https://github.com/advisories/GHSA-p8wg-vrv2-v86f",
     "https://github.com/advisories/GHSA-jqcg-44mw-7w3h"
-  ]
+  ],
+  "native_initial_head": "6bee97c197af110872383fc6eb04eb42525e35b3",
+  "native_initial_results": [
+    {
+      "job": 126875871568,
+      "node": "v22.23.4",
+      "audit": {
+        "info": 0,
+        "low": 8,
+        "moderate": 66,
+        "high": 69,
+        "critical": 0
+      },
+      "tests": {
+        "success": false,
+        "numTotalTestSuites": 163,
+        "numPassedTestSuites": 153,
+        "numFailedTestSuites": 10,
+        "numTotalTests": 341,
+        "numPassedTests": 329,
+        "numFailedTests": 12,
+        "numPendingTests": 0,
+        "numTodoTests": 0
+      },
+      "security_regressions_passed": 8
+    },
+    {
+      "job": 126875871639,
+      "node": "v24.22.1",
+      "audit": {
+        "info": 0,
+        "low": 8,
+        "moderate": 66,
+        "high": 69,
+        "critical": 0
+      },
+      "tests": {
+        "success": false,
+        "numTotalTestSuites": 163,
+        "numPassedTestSuites": 153,
+        "numFailedTestSuites": 10,
+        "numTotalTests": 341,
+        "numPassedTests": 329,
+        "numFailedTests": 12,
+        "numPendingTests": 0,
+        "numTodoTests": 0
+      },
+      "security_regressions_passed": 8
+    }
+  ],
+  "fresh_peer_validation_control": {
+    "pnpm": "10.7.0",
+    "frozen_exit": 0,
+    "fresh_peer_exit": 1,
+    "unmet_peer_lines": 52,
+    "improvement_verified": true,
+    "requirement": "Both frozen install and explicit resolution-only strict peer check, followed by unchanged authoritative lock/declarations. Frozen success alone is insufficient."
+  }
 }
