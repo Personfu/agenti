@@ -23,7 +23,7 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "@hono/node-server": "^1.11.2",
+    "@hono/node-server": "^2.1.6",
     "dotenv": "^16.4.5",
     "hono": "^4.4.0",
     "node-fetch": "^3.3.2",
