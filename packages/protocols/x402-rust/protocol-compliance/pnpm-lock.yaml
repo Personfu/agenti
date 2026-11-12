@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@hono/node-server':
-        specifier: ^1.19.9
-        version: 1.19.9(hono@4.11.9)
+        specifier: ^2.1.6
+        version: 2.1.8(hono@4.11.9)
       '@scure/base':
         specifier: ^2.0.0
         version: 2.0.0
@@ -31,7 +31,7 @@ importers:
         version: 2.3.0(ethers@6.16.0)(hono@4.11.9)(typescript@5.9.3)
       '@x402/svm':
         specifier: ^2.3.0
-        version: 2.3.0(@solana/sysvars@6.0.1(typescript@5.9.3))(typescript@5.9.3)
+        version: 2.3.0(@solana/sysvars@5.5.1(typescript@5.9.3))(typescript@5.9.3)
       dotenv:
         specifier: ^17.3.1
         version: 17.3.1
@@ -231,11 +231,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hono/node-server@1.19.9':
-    resolution: {integrity: sha512-vHL6w3ecZsky+8P5MD+eFfaGTyCeOHUIFYMGpQGbrBTSmNNoxv0if69rEZ5giu36weC5saFuznL411gRX7bJDw==}
-    engines: {node: '>=18.14.1'}
+  '@hono/node-server@2.1.8':
+    resolution: {integrity: sha512-jdf7FHh6A1lzjpHHQUgxsg2GeER2vMetnAOfeActzcoli6jamlK+NAwL6Dsr5Fl3BS3tYUQzCdtZjU8Qxv7bEA==}
+    engines: {node: '>=20'}
     peerDependencies:
-      hono: ^4
+      hono: ^4 || ^5.0.0-0
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
@@ -1648,7 +1648,7 @@ snapshots:
   '@esbuild/win32-x64@0.27.3':
     optional: true
 
-  '@hono/node-server@1.19.9(hono@4.11.9)':
+  '@hono/node-server@2.1.8(hono@4.11.9)':
     dependencies:
       hono: 4.11.9
 
@@ -1762,10 +1762,10 @@ snapshots:
     dependencies:
       '@solana/kit': 5.5.1(typescript@5.9.3)
 
-  '@solana-program/token-2022@0.6.1(@solana/kit@5.5.1(typescript@5.9.3))(@solana/sysvars@6.0.1(typescript@5.9.3))':
+  '@solana-program/token-2022@0.6.1(@solana/kit@5.5.1(typescript@5.9.3))(@solana/sysvars@5.5.1(typescript@5.9.3))':
     dependencies:
       '@solana/kit': 5.5.1(typescript@5.9.3)
-      '@solana/sysvars': 6.0.1(typescript@5.9.3)
+      '@solana/sysvars': 5.5.1(typescript@5.9.3)
 
   '@solana-program/token@0.9.0(@solana/kit@5.5.1(typescript@5.9.3))':
     dependencies:
@@ -2750,11 +2750,11 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@x402/svm@2.3.0(@solana/sysvars@6.0.1(typescript@5.9.3))(typescript@5.9.3)':
+  '@x402/svm@2.3.0(@solana/sysvars@5.5.1(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@solana-program/compute-budget': 0.11.0(@solana/kit@5.5.1(typescript@5.9.3))
       '@solana-program/token': 0.9.0(@solana/kit@5.5.1(typescript@5.9.3))
-      '@solana-program/token-2022': 0.6.1(@solana/kit@5.5.1(typescript@5.9.3))(@solana/sysvars@6.0.1(typescript@5.9.3))
+      '@solana-program/token-2022': 0.6.1(@solana/kit@5.5.1(typescript@5.9.3))(@solana/sysvars@5.5.1(typescript@5.9.3))
       '@solana/kit': 5.5.1(typescript@5.9.3)
       '@x402/core': 2.3.1
     transitivePeerDependencies:
