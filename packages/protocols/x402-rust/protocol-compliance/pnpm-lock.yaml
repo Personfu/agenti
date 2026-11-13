@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.9
-        version: 1.19.9(hono@4.11.9)
+        version: 1.19.9(hono@4.13.16)
       '@scure/base':
         specifier: ^2.0.0
         version: 2.0.0
@@ -28,10 +28,10 @@ importers:
         version: 2.3.0(typescript@5.9.3)
       '@x402/hono':
         specifier: ^2.3.0
-        version: 2.3.0(ethers@6.16.0)(hono@4.11.9)(typescript@5.9.3)
+        version: 2.3.0(ethers@6.16.0)(hono@4.13.16)(typescript@5.9.3)
       '@x402/svm':
         specifier: ^2.3.0
-        version: 2.3.0(@solana/sysvars@6.0.1(typescript@5.9.3))(typescript@5.9.3)
+        version: 2.3.0(@solana/sysvars@5.5.1(typescript@5.9.3))(typescript@5.9.3)
       dotenv:
         specifier: ^17.3.1
         version: 17.3.1
@@ -39,8 +39,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       hono:
-        specifier: ^4.11.9
-        version: 4.11.9
+        specifier: ^4.13.16
+        version: 4.13.16
       tmp:
         specifier: ^0.2.5
         version: 0.2.5
@@ -1304,8 +1304,8 @@ packages:
   get-tsconfig@4.13.6:
     resolution: {integrity: sha512-shZT/QMiSHc/YBLxxOkMtgSid5HFoauqCE3/exfsEcwg1WkeqjG+V40yBbBrsD+jW2HDXcs28xOfcbm2jI8Ddw==}
 
-  hono@4.11.9:
-    resolution: {integrity: sha512-Eaw2YTGM6WOxA6CXbckaEvslr2Ne4NFsKrvc0v97JD5awbmeBLO5w9Ho9L9kmKonrwF9RJlW6BxT1PVv/agBHQ==}
+  hono@4.13.16:
+    resolution: {integrity: sha512-AOLOEhvrV+iH92xXCnFr/5+3KjPKcI3xP63XJtX5spAnkznPdHijlIsUTpi7/9EhWqrTCekw5c5zh1K+YsVw7A==}
     engines: {node: '>=16.9.0'}
 
   isows@1.0.7:
@@ -1648,9 +1648,9 @@ snapshots:
   '@esbuild/win32-x64@0.27.3':
     optional: true
 
-  '@hono/node-server@1.19.9(hono@4.11.9)':
+  '@hono/node-server@1.19.9(hono@4.13.16)':
     dependencies:
-      hono: 4.11.9
+      hono: 4.13.16
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
@@ -1762,10 +1762,10 @@ snapshots:
     dependencies:
       '@solana/kit': 5.5.1(typescript@5.9.3)
 
-  '@solana-program/token-2022@0.6.1(@solana/kit@5.5.1(typescript@5.9.3))(@solana/sysvars@6.0.1(typescript@5.9.3))':
+  '@solana-program/token-2022@0.6.1(@solana/kit@5.5.1(typescript@5.9.3))(@solana/sysvars@5.5.1(typescript@5.9.3))':
     dependencies:
       '@solana/kit': 5.5.1(typescript@5.9.3)
-      '@solana/sysvars': 6.0.1(typescript@5.9.3)
+      '@solana/sysvars': 5.5.1(typescript@5.9.3)
 
   '@solana-program/token@0.9.0(@solana/kit@5.5.1(typescript@5.9.3))':
     dependencies:
@@ -2738,11 +2738,11 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@x402/hono@2.3.0(ethers@6.16.0)(hono@4.11.9)(typescript@5.9.3)':
+  '@x402/hono@2.3.0(ethers@6.16.0)(hono@4.13.16)(typescript@5.9.3)':
     dependencies:
       '@x402/core': 2.3.1
       '@x402/extensions': 2.3.1(ethers@6.16.0)(typescript@5.9.3)
-      hono: 4.11.9
+      hono: 4.13.16
       zod: 3.25.76
     transitivePeerDependencies:
       - bufferutil
@@ -2750,11 +2750,11 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@x402/svm@2.3.0(@solana/sysvars@6.0.1(typescript@5.9.3))(typescript@5.9.3)':
+  '@x402/svm@2.3.0(@solana/sysvars@5.5.1(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@solana-program/compute-budget': 0.11.0(@solana/kit@5.5.1(typescript@5.9.3))
       '@solana-program/token': 0.9.0(@solana/kit@5.5.1(typescript@5.9.3))
-      '@solana-program/token-2022': 0.6.1(@solana/kit@5.5.1(typescript@5.9.3))(@solana/sysvars@6.0.1(typescript@5.9.3))
+      '@solana-program/token-2022': 0.6.1(@solana/kit@5.5.1(typescript@5.9.3))(@solana/sysvars@5.5.1(typescript@5.9.3))
       '@solana/kit': 5.5.1(typescript@5.9.3)
       '@x402/core': 2.3.1
     transitivePeerDependencies:
@@ -2861,7 +2861,7 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  hono@4.11.9: {}
+  hono@4.13.16: {}
 
   isows@1.0.7(ws@8.18.3):
     dependencies:
