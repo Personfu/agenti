@@ -22,7 +22,7 @@
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.44.1",
     "get-port": "^7.1.0",
-    "hono": "^4.9.9",
+    "hono": "^4.13.16",
     "jmespath": "^0.16.0",
     "mcpay": "workspace:*",
     "viem": "2.37.13",

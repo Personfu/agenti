@@ -16,7 +16,7 @@
     "@neondatabase/serverless": "^1.0.2",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.44.1",
-    "hono": "^4.9.9",
+    "hono": "^4.13.16",
     "mcpay": "workspace:*",
     "zod": "^4.1.11"
   },

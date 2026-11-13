@@ -18,7 +18,7 @@
     "@modelcontextprotocol/sdk": "^1.18.2",
     "ai": "^5.0.40",
     "dotenv": "^17.2.3",
-    "hono": "^4.9.6",
+    "hono": "^4.13.16",
     "mcp-handler": "^1.0.2",
     "mcpay": "workspace:*",
     "x402": "^0.6.5",
