@@ -19,7 +19,7 @@
     "@x402/stellar": "workspace:*",
     "@x402/svm": "workspace:*",
     "dotenv": "^16.6.1",
-    "hono": "^4.7.1"
+    "hono": "^4.13.16"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
